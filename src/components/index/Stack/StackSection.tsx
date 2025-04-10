@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { StackType } from "../../types/StackItemTypes";
+import { StackType } from "@/types/StackItemTypes";
 import StackFilter from "../Stack/StackFilter";
 import StackList from "../Stack/StackList";
 

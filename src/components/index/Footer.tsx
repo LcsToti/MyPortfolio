@@ -14,9 +14,12 @@ export default function Footer() {
           +{" "}
           <a href="https://vite.dev/" className="text-yellow-500">
             Vite
+          </a>{" "}
+          +{" "}
+          <a href="https://vercekl.com/" className="text-black dark:text-white">
+            Vercel
           </a>
         </p>
-        <p>v.1.0.0</p>
       </div>
     </footer>
   );

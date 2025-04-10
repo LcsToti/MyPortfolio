@@ -1,4 +1,4 @@
-import type { StackItem } from "../../types/StackItemTypes";
+import type { StackItem } from "@/types/StackItemTypes";
 
 export default function StackItem({
   title,

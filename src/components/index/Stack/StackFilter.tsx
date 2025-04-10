@@ -2,7 +2,7 @@ import {
   STACK_TYPES,
   STACK_TYPE_LABELS,
   type StackType,
-} from "../../types/StackItemTypes";
+} from "@/types/StackItemTypes";
 
 type Props = {
   onSelectType: (type: StackType | null) => void;

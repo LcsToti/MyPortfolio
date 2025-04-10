@@ -1,5 +1,5 @@
-import type { StackType } from "../../types/StackItemTypes";
-import { myStack } from "../../data/my-stack";
+import type { StackType } from "@/types/StackItemTypes";
+import { myStack } from "@/data/my-stack";
 import StackItem from "./StackItem";
 
 type Props = {
