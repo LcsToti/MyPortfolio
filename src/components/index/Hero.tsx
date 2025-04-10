@@ -5,6 +5,8 @@ import fileDownloadIcon from "@/assets/icons/file-download.png";
 import githubIcon from "@/assets/icons/github.png";
 import linkedinIcon from "@/assets/icons/linkedin.png";
 
+import curriculum from "@/assets/curriculum.pdf";
+
 import Button from "@/components/ui/Button";
 import TechItem from "@/components/ui/TechItem";
 import SocialLink from "@/components/ui/SocialLink";
@@ -18,7 +20,16 @@ export default function Hero() {
   const [buttonState, setButtonState] = useState({
     iconSrc: copyIcon,
     text: "Copiar Email",
+    coloredIcon: false,
   });
+
+  const downloadCurriculum = () => {
+    // const link = document.createElement("a");
+    // link.href = curriculum;
+    // link.download = "curriculum.pdf";
+    // link.click();
+    window.open(curriculum, "_blank");
+  };
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText("lucastotidev@gmail.com");
@@ -26,11 +37,13 @@ export default function Hero() {
     setButtonState({
       iconSrc: checkIcon,
       text: "Copiado!",
+      coloredIcon: true,
     });
     setTimeout(() => {
       setButtonState({
         iconSrc: copyIcon,
         text: "Copiar Email",
+        coloredIcon: false,
       });
     }, 2000);
   };
@@ -95,8 +108,13 @@ export default function Hero() {
             iconSrc={buttonState.iconSrc}
             text={buttonState.text}
             handleOnClick={copyToClipboard}
+            coloredIcon={buttonState.coloredIcon}
           />
-          <Button iconSrc={fileDownloadIcon} text="Baixar Currículo" />
+          <Button
+            iconSrc={fileDownloadIcon}
+            text="Baixar Currículo"
+            handleOnClick={downloadCurriculum}
+          />
           <Button
             iconSrc={phoneIcon}
             text="Contato"
