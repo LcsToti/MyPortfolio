@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
