@@ -1,8 +1,12 @@
 import ThemeSwitch from "./ThemeSwitch";
-import SideBarNav from "./SideBarNav";
+import SideBarSwitch from "./SideBarSwitch";
 import NavLink from "./NavLink";
 
-export default function Header() {
+type Props = {
+  toggleNav: () => void;
+};
+
+export default function Header({ toggleNav }: Props) {
   return (
     <header className="flex bg-neutral-100 dark:bg-neutral-900 py-4 border-b-[1px] border-neutral-300 dark:border-neutral-800">
       <nav className="flex items-center gap:2 md:gap-5 py-[10px] px-[2%] w-full ">
@@ -13,7 +17,7 @@ export default function Header() {
         </a>
         <span className="flex-1"></span>
         <ThemeSwitch />
-        <SideBarNav />
+        <SideBarSwitch toggleNav={toggleNav} />
         <ul className="hidden md:flex gap-[10px] m-0 p-0 list-none">
           <NavLink href="#projects">Projetos</NavLink>
           <NavLink href="#skills">Skills</NavLink>

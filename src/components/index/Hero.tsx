@@ -1,27 +1,40 @@
-import Button from "./ui/Button";
-import TechItem from "./ui/TechItem";
-import SocialLink from "@/components/ui/SocialLink";
-import WaveImg from "@/assets/wave.png";
-
+import copyIcon from "@/assets/icons/copy.png";
+import checkIcon from "@/assets/icons/check.png";
+import phoneIcon from "@/assets/icons/phone.png";
+import fileDownloadIcon from "@/assets/icons/file-download.png";
 import githubIcon from "@/assets/icons/github.png";
 import linkedinIcon from "@/assets/icons/linkedin.png";
+
+import Button from "@/components/ui/Button";
+import TechItem from "@/components/ui/TechItem";
+import SocialLink from "@/components/ui/SocialLink";
+import WaveImg from "@/assets/wave.png";
+import { useState } from "react";
 
 function goToContact() {
   window.location.href = "#contact";
 }
-
-async function copyToClipboard(text: string): Promise<boolean> {
-  try {
-    if (navigator.clipboard?.writeText) {
-      await navigator.clipboard.writeText(text);
-      return true;
-    }
-    return false;
-  } catch {
-    return false;
-  }
-}
 export default function Hero() {
+  const [buttonState, setButtonState] = useState({
+    iconSrc: copyIcon,
+    text: "Copiar Email",
+  });
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText("lucastotidev@gmail.com");
+
+    setButtonState({
+      iconSrc: checkIcon,
+      text: "Copiado!",
+    });
+    setTimeout(() => {
+      setButtonState({
+        iconSrc: copyIcon,
+        text: "Copiar Email",
+      });
+    }, 2000);
+  };
+
   return (
     <section
       className="py-10 md:py-20 bg-gradient-to-tr
@@ -30,6 +43,7 @@ export default function Hero() {
      to-slate-300 dark:to-slate-900
       px-8 md:px-12 lg:px-24 xl:px-48 2xl:px-[15%]
       relative flex flex-col justify-center"
+      id="hero"
     >
       <img
         className="hidden md:flex md:shown absolute bottom-[-5px] right-0 z-0 max-h-[425px] md:max-h-[560px] "
@@ -78,13 +92,16 @@ export default function Hero() {
         </div>
         <div className="flex gap-4 flex-wrap items-center justify-center md:items-start md:justify-start">
           <Button
-            iconSrc="copy"
-            text="Meu Email"
-            onCopy={copyToClipboard}
-            textToCopy="lucastotidev@gmail.com"
+            iconSrc={buttonState.iconSrc}
+            text={buttonState.text}
+            handleOnClick={copyToClipboard}
           />
-          <Button iconSrc="filedownload" text="Baixar Currículo" />
-          <Button iconSrc="phone" text="Contato" handleOnClick={goToContact} />
+          <Button iconSrc={fileDownloadIcon} text="Baixar Currículo" />
+          <Button
+            iconSrc={phoneIcon}
+            text="Contato"
+            handleOnClick={goToContact}
+          />
         </div>
         <div className="flex flex-col gap-5">
           <h3 className="text-2xl font-medium text-neutral-700 dark:text-neutral-300">

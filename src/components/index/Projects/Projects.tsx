@@ -1,5 +1,5 @@
 import { projects } from "@/data/projects";
-import ProjectCard from "@/components/Projects/ProjectCard";
+import ProjectCard from "@/components/index/Projects/ProjectCard";
 
 export default function Projects() {
   return (
@@ -9,11 +9,11 @@ export default function Projects() {
     >
       <h1 className="text-3xl">PROJETOS</h1>
       <br />
-      <h2 className="text-xl font-light">
+      <h2 className="text-xl font-light text-center">
         Aqui estão alguns projetos que desenvolvi em equipe:
       </h2>
       <br />
-      <div className="flex gap-5 flex-wrap px-20 items-center justify-center">
+      <div className="flex gap-5 flex-wrap px-5 md:px-20 items-center justify-center">
         {projects.map((project) => (
           <ProjectCard
             key={project.id}
