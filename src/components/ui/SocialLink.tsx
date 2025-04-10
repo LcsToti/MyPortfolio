@@ -19,7 +19,7 @@ export default function SocialLink({ title, img, link }: Props) {
     >
       <img
         src={img}
-        className={img === "github" ? "h-[100%] dark:invert" : "h-[100%]"}
+        className={title === "GitHub" ? "h-[100%] dark:invert" : "h-[100%]"}
       />
       <p className="dark:text-white">{title}</p>
     </a>
