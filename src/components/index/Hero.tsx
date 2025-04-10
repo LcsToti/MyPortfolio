@@ -5,8 +5,6 @@ import fileDownloadIcon from "@/assets/icons/file-download.png";
 import githubIcon from "@/assets/icons/github.png";
 import linkedinIcon from "@/assets/icons/linkedin.png";
 
-import curriculum from "@/assets/curriculum.pdf";
-
 import Button from "@/components/ui/Button";
 import TechItem from "@/components/ui/TechItem";
 import SocialLink from "@/components/ui/SocialLink";
@@ -28,7 +26,7 @@ export default function Hero() {
     // link.href = curriculum;
     // link.download = "curriculum.pdf";
     // link.click();
-    window.open(curriculum, "_blank");
+    window.open("/curriculum.pdf", "_blank");
   };
 
   const copyToClipboard = () => {
