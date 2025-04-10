@@ -26,4 +26,4 @@ O site está disponível em: https://lucas-toti.vercel.app
 
 - [LinkedIn](https://www.linkedin.com/in/LcsToti/) <br/>
 - [GitHub](https://github.com/LcsToti/) <br/>
-- Lucastotidev@email.com
+- Lucastotidev@gmail.com
