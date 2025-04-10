@@ -22,8 +22,8 @@ export default function ProjectCard({
         ))}
       </div>
       <h1 className="font-bold text-2xl">{title}</h1>
-      <div className="min-h-[100px]">{description}</div>
-      <div className="min-h-[60px] flex-1 text-neutral-400">{stack}</div>
+      <div className="h-[70px]">{description}</div>
+      <div className="h-[50px] text-neutral-400">{stack}</div>
       <div className="flex flex-col gap-3 justify-end h-[95px]">
         <Link title="Repositorio" img={githubIcon} link={gitRepo} />
         {access && <Link title="Acessar" img={linkIcon} link={access} />}

@@ -2,9 +2,15 @@ type Props = {
   iconSrc: string;
   text: string;
   handleOnClick?: () => void;
+  coloredIcon?: boolean;
 };
 
-export default function Button({ iconSrc, text, handleOnClick }: Props) {
+export default function Button({
+  iconSrc,
+  text,
+  handleOnClick,
+  coloredIcon = false,
+}: Props) {
   return (
     <button
       className="
@@ -24,7 +30,7 @@ export default function Button({ iconSrc, text, handleOnClick }: Props) {
           src={iconSrc}
           width="100%"
           height="100%"
-          className="dark:invert-100"
+          className={coloredIcon ? "dark:invert-0" : "dark:invert-100"}
         />
       </div>
       {text}

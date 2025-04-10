@@ -18,7 +18,16 @@ export default function Hero() {
   const [buttonState, setButtonState] = useState({
     iconSrc: copyIcon,
     text: "Copiar Email",
+    coloredIcon: false,
   });
+
+  const downloadCurriculum = () => {
+    // const link = document.createElement("a");
+    // link.href = curriculum;
+    // link.download = "curriculum.pdf";
+    // link.click();
+    window.open("/curriculum.pdf", "_blank");
+  };
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText("lucastotidev@gmail.com");
@@ -26,11 +35,13 @@ export default function Hero() {
     setButtonState({
       iconSrc: checkIcon,
       text: "Copiado!",
+      coloredIcon: true,
     });
     setTimeout(() => {
       setButtonState({
         iconSrc: copyIcon,
         text: "Copiar Email",
+        coloredIcon: false,
       });
     }, 2000);
   };
@@ -95,8 +106,13 @@ export default function Hero() {
             iconSrc={buttonState.iconSrc}
             text={buttonState.text}
             handleOnClick={copyToClipboard}
+            coloredIcon={buttonState.coloredIcon}
           />
-          <Button iconSrc={fileDownloadIcon} text="Baixar Currículo" />
+          <Button
+            iconSrc={fileDownloadIcon}
+            text="Baixar Currículo"
+            handleOnClick={downloadCurriculum}
+          />
           <Button
             iconSrc={phoneIcon}
             text="Contato"

@@ -8,6 +8,7 @@ export default function Contact() {
   const [buttonState, setButtonState] = useState({
     iconSrc: copyIcon,
     text: "Copiar Email",
+    coloredIcon: false,
   });
 
   const copyToClipboard = () => {
@@ -16,11 +17,13 @@ export default function Contact() {
     setButtonState({
       iconSrc: checkIcon,
       text: "Copiado!",
+      coloredIcon: true,
     });
     setTimeout(() => {
       setButtonState({
         iconSrc: copyIcon,
         text: "Copiar Email",
+        coloredIcon: false,
       });
     }, 2000);
   };
@@ -42,6 +45,7 @@ export default function Contact() {
           iconSrc={buttonState.iconSrc}
           text={buttonState.text}
           handleOnClick={copyToClipboard}
+          coloredIcon={buttonState.coloredIcon}
         />
         <Button
           iconSrc={linkedin}
@@ -53,6 +57,7 @@ export default function Contact() {
               "noopener,noreferrer"
             )
           }
+          coloredIcon
         />
       </div>
     </section>
