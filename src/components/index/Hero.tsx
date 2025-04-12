@@ -9,6 +9,7 @@ import Button from "@/components/ui/Button";
 import TechItem from "@/components/ui/TechItem";
 import SocialLink from "@/components/ui/SocialLink";
 import WaveImg from "@/assets/wave.png";
+import WaveImgDM from "@/assets/wave-dm.png";
 import { useState } from "react";
 
 function goToContact() {
@@ -57,8 +58,12 @@ export default function Hero() {
       id="hero"
     >
       <img
-        className="hidden md:flex md:shown absolute bottom-[-5px] right-0 z-0 max-h-[425px] md:max-h-[560px] "
+        className="hidden dark:md:hidden md:flex absolute bottom-[-5px] right-0 z-0 max-h-[425px] md:max-h-[560px] "
         src={WaveImg}
+      />
+      <img
+        className="hidden dark:md:flex md:shown absolute bottom-[-5px] right-0 z-0 max-h-[425px] md:max-h-[560px] "
+        src={WaveImgDM}
       />
       <main className="flex flex-col items-center md:items-start gap-10 md:gap-15 text-center md:text-start z-10">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 dark:text-white">
