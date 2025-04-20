@@ -16,9 +16,9 @@ export default function ProjectCard({
       className="bg-white dark:bg-neutral-800 rounded-xl p-5 text-black dark:text-white w-[300px] flex flex-col gap-2 shadow-lg shadow-black/30 
     transition-all duration-200 hover:translate-y-[-4px] cursor-default"
     >
-      <div className="h-max overflow-hidden rounded-lg">
+      <div className="overflow-hidden rounded-xl w-[260px] h-[135px]">
         {imgs.map((img) => (
-          <img src={img} key={imgs.indexOf(img)} />
+          <img src={img} key={imgs.indexOf(img)} className="h-full w-full" />
         ))}
       </div>
       <h1 className="font-bold text-2xl">{title}</h1>
