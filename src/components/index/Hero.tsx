@@ -22,7 +22,7 @@ export default function Hero() {
     coloredIcon: false,
   });
 
-  const downloadCurriculum = () => {
+  const openCurriculum = () => {
     // const link = document.createElement("a");
     // link.href = curriculum;
     // link.download = "curriculum.pdf";
@@ -115,8 +115,8 @@ export default function Hero() {
           />
           <Button
             iconSrc={fileDownloadIcon}
-            text="Baixar Currículo"
-            handleOnClick={downloadCurriculum}
+            text="Ver Currículo"
+            handleOnClick={openCurriculum}
           />
           <Button
             iconSrc={phoneIcon}
