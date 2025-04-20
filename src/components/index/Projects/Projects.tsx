@@ -10,7 +10,7 @@ export default function Projects() {
       <h1 className="text-3xl">PROJETOS</h1>
       <br />
       <h2 className="text-xl font-light text-center">
-        Aqui estão alguns projetos que desenvolvi em equipe:
+        Aqui estão alguns projetos que desenvolvi:
       </h2>
       <br />
       <div className="flex gap-5 flex-wrap px-5 md:px-20 items-center justify-center">

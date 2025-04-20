@@ -1,6 +1,7 @@
 import { ProjectItem } from "@/types/ProjectItemTypes";
 import pratododiaimg from "@/assets/projectImages/pratododia.png";
 import pccertoimg from "@/assets/projectImages/pccerto.png";
+import myportfolioimg from "@/assets/projectImages/myportfolio.png";
 
 export const projects: ProjectItem[] = [
   {
@@ -22,5 +23,15 @@ export const projects: ProjectItem[] = [
     gitRepo:
       "https://github.com/LcsToti/PC-Certo?tab=readme-ov-file#%EF%B8%8F-pc-certo",
     access: "https://lcstoti.github.io/PC-Certo/src/Paginainicial.html",
+  },
+  {
+    id: "3",
+    title: "My Portfolio",
+    description: "Este site que você está vendo agora!",
+    imgs: [myportfolioimg],
+    stack: "React, TypeScript, Tailwind CSS, Vite",
+    gitRepo:
+      "https://github.com/LcsToti/MyPortfolio?tab=readme-ov-file#-meu-portf%C3%B3lio-pessoal",
+    access: "https://lucas-toti.vercel.app/",
   },
 ];
