@@ -4,7 +4,7 @@ import Header from "@/components/index/Header/Header";
 import SideBar from "@/components/index/SideBar/SideBar";
 import Hero from "@/components/index/Hero";
 import Projects from "@/components/index/Projects/Projects";
-import StackSection from "@/components/index/Stack/StackSection";
+import Skills from "@/components/index/Skills";
 import About from "@/components/index/About";
 import Footer from "@/components/index/Footer";
 import Contact from "@/components/index/Contact";
@@ -38,7 +38,7 @@ function App() {
       <main className="bg-neutral-100 dark:bg-neutral-800">
         <Hero />
         <Projects />
-        <StackSection />
+        <Skills />
         <About />
         <Contact />
       </main>

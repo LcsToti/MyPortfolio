@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { StackType } from "@/types/StackItemTypes";
-import StackFilter from "../Stack/StackFilter";
-import StackList from "../Stack/StackList";
+import StackFilter from "./Stack/StackFilter";
+import StackList from "./Stack/StackList";
 
-export default function StackSection() {
+export default function Skills() {
   const [selectedType, setSelectedType] = useState<StackType | null>("default");
 
   return (
