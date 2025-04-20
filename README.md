@@ -2,6 +2,8 @@
 
 Este é o meu portfólio desenvolvido com **React**, onde apresento meus principais projetos, habilidades e formas de contato.
 
+![Hero](https://github.com/user-attachments/assets/1483bdfc-be5b-4834-8090-1c3b8cc9ba55)
+
 ## 🚀 Tecnologias
 
 - React
@@ -21,9 +23,3 @@ Este é o meu portfólio desenvolvido com **React**, onde apresento meus princip
 ## 🌐 Deploy
 
 O site está disponível em: https://lucas-toti.vercel.app
-
-## 📬 Contato
-
-- [LinkedIn](https://www.linkedin.com/in/LcsToti/) <br/>
-- [GitHub](https://github.com/LcsToti/) <br/>
-- Lucastotidev@gmail.com
