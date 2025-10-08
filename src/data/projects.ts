@@ -12,7 +12,7 @@ export const projects: ProjectItem[] = [
     imgs: [pratododiaimg],
     stack: "ASP.NET MVC, Bootstrap, Azure, HTML, CSS e JS",
     gitRepo:
-      "https://github.com/LcsToti/PratoDoDia?tab=readme-ov-file#%EF%B8%8F-prato-do-dia",
+      "https://github.com/LcsToti/PratoDoDia?tab=readme-ov-file",
   },
   {
     id: "2",
@@ -21,8 +21,8 @@ export const projects: ProjectItem[] = [
     imgs: [pccertoimg],
     stack: "HTML, CSS e JavaScript",
     gitRepo:
-      "https://github.com/LcsToti/PC-Certo?tab=readme-ov-file#%EF%B8%8F-pc-certo",
-    access: "https://lcstoti.github.io/PC-Certo/src/Paginainicial.html",
+      "https://github.com/LcsToti/PC-Certo?tab=readme-ov-file",
+    access: "https://pc-certo.lcstoti.dev",
   },
   {
     id: "3",
@@ -31,7 +31,7 @@ export const projects: ProjectItem[] = [
     imgs: [myportfolioimg],
     stack: "React, TypeScript, Tailwind CSS, Vite",
     gitRepo:
-      "https://github.com/LcsToti/MyPortfolio?tab=readme-ov-file#-meu-portf%C3%B3lio-pessoal",
-    access: "https://lucas-toti.vercel.app/",
+      "https://github.com/LcsToti/MyPortfolio?tab=readme-ov-file",
+    access: "https://lcstoti.dev/",
   },
 ];
