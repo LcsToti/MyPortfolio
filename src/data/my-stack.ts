@@ -83,22 +83,13 @@ export const myStack: StackItem[] = [
   },
   {
     id: "10",
-    title: ".NET Core",
+    title: ".NET",
     description:
-      "Framework para desenvolvimento de aplicações multiplataforma.",
+      "Framework para desenvolvimento de diversos tipo de aplicações como api's e sites SSR.",
     image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg",
+      "https://www.svgrepo.com/show/376369/dotnet.svg",
     type: ["framework", "default", "backend"],
     link: "https://dotnet.microsoft.com/en-us/",
-  },
-  {
-    id: "11",
-    title: "ASP.NET",
-    description: "Framework para desenvolvimento de aplicações web com C#.",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg",
-    type: ["framework", "backend"],
-    link: "https://dotnet.microsoft.com/apps/aspnet",
   },
   {
     id: "12",
