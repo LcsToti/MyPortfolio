@@ -4,9 +4,7 @@ import phoneIcon from "@/assets/icons/phone.png";
 import fileDownloadIcon from "@/assets/icons/file-download.png";
 import githubIcon from "@/assets/icons/github.png";
 import linkedinIcon from "@/assets/icons/linkedin.png";
-
 import Button from "@/components/ui/Button";
-import TechItem from "@/components/ui/TechItem";
 import SocialLink from "@/components/ui/SocialLink";
 import WaveImg from "@/assets/wave.png";
 import { useState } from "react";
