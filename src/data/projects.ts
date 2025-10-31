@@ -13,6 +13,7 @@ export const projects: ProjectItem[] = [
     stack: "ASP.NET MVC, Bootstrap, Azure, HTML, CSS e JS",
     gitRepo:
       "https://github.com/LcsToti/PratoDoDia?tab=readme-ov-file",
+      access: "https://pratododia.lcstoti.dev",
   },
   {
     id: "2",

@@ -4,7 +4,7 @@ import ProjectCard from "@/components/index/Projects/ProjectCard";
 export default function Projects() {
   return (
     <div
-      className="py-20 flex flex-col items-center justify-center bg-blue-500 dark:bg-violet-900 text-white"
+      className="py-20 flex flex-col items-center justify-center bg-blue-500 text-white"
       id="projects"
     >
       <h1 className="text-3xl">PROJETOS</h1>

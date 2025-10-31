@@ -143,7 +143,62 @@ export const myStack: StackItem[] = [
       "Plataforma de hospedagem de código-fonte e controle de versão.",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
-    type: ["devops"],
+    type: ["devops", "default"],
     link: "https://github.com/",
+  },
+  {
+    id: "17",
+    title: "MongoDB",
+    description:
+      "Banco de dados NoSQL orientado à documentos tipo JSON.",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    type: ["database", "backend", "default"],
+    link: "https://www.mongodb.com/",
+  },
+  {
+    id: "18",
+    title: "RabbitMQ",
+    description:
+      "Message broker que funciona como um intermediário para comunicação assíncrona entre diferentes partes de uma aplicação.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original.svg",
+    type: ["framework", "backend"],
+    link: "https://www.rabbitmq.com/",
+  },
+  {
+    id: "19",
+    title: "Docker",
+    description:
+      "Plataforma para construir, implementar, executar, atualizar e gerenciar containers",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+    type: ["database","backend" , "devops", "default"],
+    link: "https://www.docker.com/",
+  },
+  {
+    id: "20",
+    title: "AWS",
+    description:
+      "Plataforma de computação em nuvem com serviços de servidores, bancos de dados, armazenamento e outras ferramentas",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
+    type: ["backend", "devops", "backend"],
+    link: "https://aws.amazon.com/pt/",
+  },
+  {
+    id: "21",
+    title: "Oracle",
+    description:
+      "Plataforma de computação em nuvem com serviços de servidores, bancos de dados, armazenamento e outras ferramentas",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg",
+    type: ["backend", "devops", "backend"],
+    link: "https://www.oracle.com/cloud/",
+  },
+  {
+    id: "22",
+    title: "xUnit",
+    description:
+      "Framework de teste para escrever e executar testes unitários na plataforma .NET",
+    image: "https://avatars.githubusercontent.com/u/2092016?s=280&v=4",
+    type: ["backend", "framework"],
+    link: "https://xunit.net/",
   },
 ];
