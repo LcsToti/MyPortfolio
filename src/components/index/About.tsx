@@ -14,26 +14,43 @@ export default function About() {
 
       <div className="max-w-2xl text-base md:text-lg">
         <p>
-          Sou desenvolvedor <strong>full-stack</strong>, trabalho com{" "}
-          <strong>ASP.NET</strong> (Web API, MVC), <strong>React</strong> e{" "}
-          <strong>React Native</strong>. Gosto de construir aplicações
-          completas, do backend ao frontend, sempre seguindo boas práticas como{" "}
-          <strong>REST</strong>, <strong>SOLID</strong> e <strong>DRY</strong>.
+          Sou <strong>Lucas Toti</strong>, Desenvolvedor e Engenheiro de Software
+          com especialização em back-end <strong>.NET (C#)</strong> e na
+          construção de arquiteturas de <strong>microsserviços</strong> complexas.
         </p>
         <br />
         <p>
-          Tenho experiência com <strong>bancos SQL</strong>,{" "}
-          <strong>Azure</strong> (e um pouco de AWS), além de versionamento com{" "}
-          <strong>Git</strong> e <strong>GitHub</strong> (Gitflow).
+          Minha expertise está em desenhar e implementar sistemas robustos e
+          escaláveis, aplicando ativamente princípios como{' '}
+          <strong>Clean Architecture</strong>,{' '}
+          <strong>Domain-Driven Design (DDD)</strong>, <strong>CQRS</strong> e{' '}
+          <strong>SOLID</strong>. Tenho experiência prática liderando o design
+          de arquiteturas orientadas a eventos (EDA) e orquestrando a
+          comunicação entre serviços com <strong>RabbitMQ</strong> e{' '}
+          <strong>MassTransit</strong>.
         </p>
         <br />
         <p>
-          Atualmente curso{" "}
-          <strong>Análise e Desenvolvimento de Sistemas</strong> na{" "}
-          <strong>PUC Minas</strong> (3º período). Lá participo de projetos em
-          equipe do início ao fim — ideia, documentação, codificação, deploy e
-          manutenção — sempre com metodologias ágeis como o{" "}
-          <strong>SCRUM</strong>.
+          Embora meu foco seja o back-end, sou um desenvolvedor full-stack
+          proficiente. No front-end, construo interfaces modernas e responsivas
+          com <strong>React</strong> e <strong>TypeScript</strong>, e desenvolvo
+          aplicações mobile nativas utilizando <strong>React Native</strong> e{' '}
+          <strong>Expo</strong>.
+        </p>
+        <br />
+        <p>
+          Minha experiência se estende à infraestrutura e DevOps, incluindo a
+          orquestração de ambientes de desenvolvimento com{' '}
+          <strong>Docker</strong> e <strong>Docker Compose</strong>,
+          configuração de <strong>Nginx</strong> e a implementação de soluções
+          em provedores de nuvem como <strong>AWS</strong> (EC2, S3, RDS),{' '}
+          <strong>Azure</strong> e <strong>Oracle Cloud</strong>.
+        </p>
+        <br />
+        <p>
+          Atualmente, curso Análise e Desenvolvimento de Sistemas na PUC Minas e
+          possuo <strong>inglês avançado (C2)</strong>, o que me permite
+          consumir documentações técnicas e colaborar em contextos globais.
         </p>
       </div>
     </div>
