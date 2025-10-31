@@ -2,6 +2,8 @@
 
 Este é o meu portfólio desenvolvido com **React**, onde apresento meus principais projetos, habilidades e formas de contato.
 
+[Acesse Aqui](https://lcstoti.dev) 
+
 ![Hero](https://github.com/user-attachments/assets/a9a5c2db-79ef-42e8-b4c6-866870a54d94)
 
 ## 🚀 Tecnologias
@@ -21,7 +23,3 @@ Este é o meu portfólio desenvolvido com **React**, onde apresento meus princip
 - [x] Contato com link para e-mail/LinkedIn
 - [x] Tema claro/escuro
 - [ ] Email automáticos
-
-## 🌐 Deploy
-
-O site está disponível em: https://lcstoti.dev
