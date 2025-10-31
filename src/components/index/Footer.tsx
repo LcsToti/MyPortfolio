@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 py-6 border-t border-neutral-200  dark:border-neutral-700">
       <div className="container mx-auto px-4 text-center">
         <p className="text-sm">
-          © 2024 <span className="font-medium">Lucas Toti | Portfolio</span>.
+          © 2024 – {new Date().getFullYear()} <span className="font-medium">Lucas Toti | Portfolio</span>.
           Todos os direitos reservados.
         </p>
         <p className="text-sm mt-2 opacity-80">
@@ -16,8 +16,8 @@ export default function Footer() {
             Vite
           </a>{" "}
           +{" "}
-          <a href="https://vercel.com/" className="text-black dark:text-white">
-            Vercel
+          <a href="https://www.oracle.com/cloud/" className="text-orange-600 dark:text-orange-400">
+            Oracle Cloud
           </a>
         </p>
       </div>
