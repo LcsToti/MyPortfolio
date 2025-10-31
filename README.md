@@ -2,7 +2,7 @@
 
 Este é o meu portfólio desenvolvido com **React**, onde apresento meus principais projetos, habilidades e formas de contato.
 
-![Hero](https://github.com/user-attachments/assets/1483bdfc-be5b-4834-8090-1c3b8cc9ba55)
+![Hero](https://github.com/user-attachments/assets/a9a5c2db-79ef-42e8-b4c6-866870a54d94)
 
 ## 🚀 Tecnologias
 
@@ -11,6 +11,8 @@ Este é o meu portfólio desenvolvido com **React**, onde apresento meus princip
 - HTML5 + CSS3 + Tailwind
 - Vite
 - Git & GitHub
+- Oracle Cloud
+- Nginx
 
 ## 📸 Funcionalidades
 
@@ -22,4 +24,4 @@ Este é o meu portfólio desenvolvido com **React**, onde apresento meus princip
 
 ## 🌐 Deploy
 
-O site está disponível em: https://lucas-toti.vercel.app
+O site está disponível em: https://lcstoti.dev
