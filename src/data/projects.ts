@@ -1,7 +1,7 @@
 import { ProjectItem } from "@/types/ProjectItemTypes";
-import pratododiaimg from "@/assets/projectImages/pratododia.png";
-import pccertoimg from "@/assets/projectImages/pccerto.png";
-import myportfolioimg from "@/assets/projectImages/myportfolio.png";
+import pratododiaimg from "@/assets/projectImages/pratododia.jpg";
+import pccertoimg from "@/assets/projectImages/pccerto.jpg";
+import myportfolioimg from "@/assets/projectImages/myportfolio.jpg";
 
 export const projects: ProjectItem[] = [
   {
