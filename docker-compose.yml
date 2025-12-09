@@ -1,0 +1,15 @@
+services:
+  web:
+    image: nginx:alpine
+    container_name: myportfolio
+    restart: unless-stopped
+    volumes:
+      - ./dist:/usr/share/nginx/html
+      - ./nginx-config/react.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      - npm-network
+
+networks:
+  npm-network:
+    external: true
+    name: npm-data_default
