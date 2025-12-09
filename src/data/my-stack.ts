@@ -192,4 +192,13 @@ export const myStack: StackItem[] = [
     type: ["backend", "framework"],
     link: "https://xunit.net/",
   },
+  {
+    id: "23",
+    title: "Nginx",
+    description:
+      "Nginx é um servidor leve de HTTP, proxy reverso, proxy de e-mail, cache de conteudo, load balancer e muito mais.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg",
+    type: ["backend", "devops"],
+    link: "https://nginx.org/",
+  },
 ];
