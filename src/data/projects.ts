@@ -3,8 +3,19 @@ import pratododiaimg from "@/assets/projectImages/pratododia.jpg";
 import pccertoimg from "@/assets/projectImages/pccerto.jpg";
 import myportfolioimg from "@/assets/projectImages/myportfolio.jpg";
 import habitumapiimg from "@/assets/projectImages/habitumapi.jpg";
+import complyimg from "@/assets/projectImages/comply.png"
 
 export const projects: ProjectItem[] = [
+  {
+    id: "0",
+    title: "My Portfolio",
+    description: "Este site que você está vendo agora!",
+    imgs: [myportfolioimg],
+    stack: "React, TypeScript, Tailwind CSS, Vite, Nginx, Oracle",
+    gitRepo:
+      "https://github.com/LcsToti/MyPortfolio?tab=readme-ov-file",
+    access: "https://lcstoti.dev/",
+  },
   {
     id: "1",
     title: "PC Certo",
@@ -38,12 +49,12 @@ export const projects: ProjectItem[] = [
   },
   {
     id: "4",
-    title: "My Portfolio",
-    description: "Este site que você está vendo agora!",
-    imgs: [myportfolioimg],
-    stack: "React, TypeScript, Tailwind CSS, Vite, Nginx, Oracle",
+    title: "Comply",
+    description: "Sistema de marketplace com leilões.",
+    imgs: [complyimg],
+    stack: "C#, .NET, React + Vite + TailwindCSS, Docker, RabbitMQ ",
     gitRepo:
-      "https://github.com/LcsToti/MyPortfolio?tab=readme-ov-file",
-    access: "https://lcstoti.dev/",
+      "https://github.com/LcsToti/Comply",
+    access: "https://comply.lcstoti.dev/",
   },
 ];
