@@ -60,7 +60,7 @@ export default function Hero() {
       />
       <main className="flex flex-col items-center md:items-start gap-10 md:gap-15 text-center md:text-start z-10">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 dark:text-white">
-          Olá!
+          Olá, você!
           <br />
           Sou{" "}
           <span className="bg-gradient-to-r from-purple-600 via-blue-600 to-sky-600 bg-clip-text text-transparent">
