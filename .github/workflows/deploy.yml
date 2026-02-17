@@ -45,6 +45,6 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /var/www/myportoflio
+            cd /var/www/myportfolio
             docker compose down
             docker compose up -d
