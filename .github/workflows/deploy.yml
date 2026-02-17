@@ -34,7 +34,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "dist/*,docker-compose.yml,nginx-config/react.conf"
-          target: "/var/www/myportoflio"
+          target: "/var/www/myportfolio"
           strip_components: 0
 
       - name: Reiniciar Docker Container
