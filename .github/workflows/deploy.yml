@@ -1,0 +1,48 @@
+name: Deploy Portfolio
+
+on: 
+  pull_request:
+    branches:
+      - main 
+    types:
+      - closed
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-20.04
+    if: github.event.pull_request.merged == true
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar dependências e buildar
+        run: | 
+          npm install
+          npm run build
+
+      - name: Deploy via SSH
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "dist/*,docker-compose.yml,nginx-config/react.conf"
+          target: "/var/www/myportoflio"
+          strip_components: 0
+
+      - name: Reiniciar Docker Container
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /var/www/myportoflio
+            docker compose down
+            docker compose up -d
