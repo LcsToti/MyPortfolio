@@ -36,6 +36,7 @@ jobs:
           source: "dist/*,docker-compose.yml,nginx-config/react.conf"
           target: "/var/www/myportfolio"
           strip_components: 0
+          overwrite: true
 
       - name: Reiniciar Docker Container
         uses: appleboy/ssh-action@v1.0.3
