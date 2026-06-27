@@ -23,6 +23,21 @@ export type SkillGroup = {
   items: string[]
 }
 
+export type ExperienceCard = {
+  title: string
+  role: string
+  period: string
+  description: string
+  points: string[]
+  stack: string[]
+}
+
+export type EducationBlock = {
+  title: string
+  description: string
+  labels: string[]
+}
+
 export type SiteContent = {
   locale: Locale
   basePath: string
@@ -59,7 +74,11 @@ export type SiteContent = {
     contactTitle: string
     contactDescription: string
   }
-  experienceItems: string[]
+  experience: {
+    positioning: string
+    cards: ExperienceCard[]
+    education: EducationBlock
+  }
   skillGroups: SkillGroup[]
   contactLinks: ProjectLink[]
   projectsPage: {
