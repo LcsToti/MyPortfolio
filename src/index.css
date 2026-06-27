@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 42 38% 94%;
+    --foreground: 193 39% 12%;
+    --card: 43 33% 97%;
+    --card-foreground: 193 39% 12%;
+    --primary: 263 78% 56%;
+    --primary-foreground: 42 38% 96%;
+    --secondary: 38 54% 84%;
+    --secondary-foreground: 193 39% 12%;
+    --muted: 43 24% 88%;
+    --muted-foreground: 194 14% 39%;
+    --accent: 277 76% 70%;
+    --accent-foreground: 193 39% 12%;
+    --border: 38 18% 78%;
+    --input: 38 18% 78%;
+    --ring: 263 78% 56%;
+  }
+
+  .dark {
+    --background: 213 31% 8%;
+    --foreground: 43 32% 92%;
+    --card: 213 25% 12%;
+    --card-foreground: 43 32% 92%;
+    --primary: 266 92% 76%;
+    --primary-foreground: 213 31% 8%;
+    --secondary: 212 18% 18%;
+    --secondary-foreground: 43 32% 92%;
+    --muted: 214 17% 17%;
+    --muted-foreground: 41 12% 68%;
+    --accent: 278 86% 74%;
+    --accent-foreground: 213 31% 8%;
+    --border: 213 16% 24%;
+    --input: 213 16% 24%;
+    --ring: 266 92% 76%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  a,
+  button {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+  }
+}
+
+@layer utilities {
+  .section-spacing {
+    @apply py-16 sm:py-20;
+  }
+
+  .subtle-grid {
+    background-image:
+      linear-gradient(hsl(var(--border) / 0.42) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--border) / 0.42) 1px, transparent 1px);
+    background-size: 42px 42px;
+  }
+}

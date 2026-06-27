@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 .vite
+.agents
+.codex_tmp
+.codex
