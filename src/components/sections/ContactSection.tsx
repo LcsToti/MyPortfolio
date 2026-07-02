@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ArrowUpRight, LoaderCircle, Mail } from 'lucide-react'
+import { ArrowUpRight, Github, Linkedin, LoaderCircle, Mail } from 'lucide-react'
 import { toast } from 'sonner'
 import { Button } from '@/components/ui/button'
 import { SectionHeading } from '@/components/sections/SectionHeading'
@@ -14,6 +14,20 @@ function getEmailFromLink(link: ProjectLink) {
   }
 
   return link.href.replace('mailto:', '').split('?')[0]
+}
+
+function getContactIcon(link: ProjectLink) {
+  const label = link.label.toLowerCase()
+
+  if (label.includes('linkedin')) {
+    return <Linkedin className="h-4 w-4 text-[#0a66c2] transition-colors group-hover:text-primary-foreground dark:group-hover:text-primary-foreground" />
+  }
+
+  if (label.includes('github')) {
+    return <Github className="h-4 w-4" />
+  }
+
+  return <ArrowUpRight className="h-4 w-4" />
 }
 
 function wait(ms: number) {
@@ -49,7 +63,7 @@ export function ContactSection({ content }: { content: SiteContent }) {
     <section id="contact" className="section-spacing">
       <div className="container grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
         <SectionHeading title={content.sections.contactTitle} description={content.sections.contactDescription} />
-        <div className="flex flex-wrap gap-3">
+        <div data-animate="fade-up" className="flex flex-wrap gap-3">
           {content.contactLinks.map((link) => {
             const email = getEmailFromLink(link)
 
@@ -65,10 +79,10 @@ export function ContactSection({ content }: { content: SiteContent }) {
             }
 
             return (
-              <Button key={link.label} asChild variant="outline">
+              <Button key={link.label} asChild variant="outline" className="group">
                 <a href={link.href} {...externalLinkProps}>
+                  {getContactIcon(link)}
                   {link.label}
-                  <ArrowUpRight className="h-4 w-4" />
                 </a>
               </Button>
             )

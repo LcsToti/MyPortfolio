@@ -102,12 +102,12 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Button asChild variant="ghost" size="icon">
+          <Button asChild variant="ghost" size="icon" className="group">
             <a href="https://linkedin.com/in/lcstoti" aria-label="LinkedIn" {...externalLinkProps}>
-              <Linkedin className="h-4 w-4" />
+              <Linkedin className="h-4 w-4 text-[#0a66c2]" />
             </a>
           </Button>
-          <Button asChild variant="ghost" size="icon">
+          <Button asChild variant="ghost" size="icon" className="group">
             <a href="https://github.com/lcstoti" aria-label="GitHub" {...externalLinkProps}>
               <Github className="h-4 w-4" />
             </a>

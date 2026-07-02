@@ -20,6 +20,30 @@ export function App() {
     return () => window.cancelAnimationFrame(animationFrame)
   }, [hash, pathname])
 
+  useEffect(() => {
+    const animatedElements = Array.from(document.querySelectorAll<HTMLElement>('[data-animate]'))
+
+    if (!animatedElements.length) {
+      return
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible')
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      { threshold: 0.16, rootMargin: '0px 0px -48px 0px' }
+    )
+
+    animatedElements.forEach((element) => observer.observe(element))
+
+    return () => observer.disconnect()
+  }, [pathname])
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />

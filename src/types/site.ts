@@ -5,6 +5,12 @@ export type ProjectSlug = 'beleza-natural' | 'comply' | 'habitum' | 'prato-do-di
 export type ProjectLink = {
   label: string
   href: string
+  kind?: 'repo' | 'live'
+}
+
+export type ProjectAsset = {
+  src?: string
+  alt: string
 }
 
 export type Project = {
@@ -12,6 +18,9 @@ export type Project = {
   name: string
   type: string
   summary: string
+  logo: ProjectAsset
+  cover: ProjectAsset
+  videoUrl: string
   stack: string[]
   points: string[]
   highlight?: string
@@ -86,11 +95,8 @@ export type SiteContent = {
     description: string
   }
   detailLabels: {
-    overview: string
     stack: string
     responsibilities: string
     back: string
-    live: string
-    repo: string
   }
 }
