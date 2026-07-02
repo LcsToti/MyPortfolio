@@ -6,7 +6,7 @@ export function ExperienceSection({ content }: { content: SiteContent }) {
   return (
     <section id="experience" className="section-spacing border-b bg-card/35" aria-labelledby="experience-heading">
       <div className="container grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:gap-12">
-        <div className="lg:sticky lg:top-24 lg:self-start">
+        <div data-animate="fade-up" className="lg:sticky lg:top-24 lg:self-start">
           <p className="text-sm font-bold uppercase tracking-[0.16em] text-primary">
             {content.nav.experience}
           </p>
@@ -36,22 +36,28 @@ export function ExperienceSection({ content }: { content: SiteContent }) {
 
         <div className="space-y-4">
           {content.experience.cards.map((experience) => (
-            <Card key={experience.title} className="shadow-none transition-colors hover:border-primary/45">
+            <Card
+              key={experience.title}
+              data-animate="fade-up"
+              className="border-primary/22 bg-[#f7f0e7] text-card-foreground shadow-none transition-colors hover:border-primary/45 dark:border-primary/35 dark:bg-secondary dark:text-secondary-foreground"
+            >
               <CardContent className="p-5 sm:p-6">
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                   <div>
-                    <h3 className="text-xl font-black tracking-normal text-foreground">{experience.title}</h3>
-                    <p className="mt-2 text-sm font-semibold text-primary">{experience.role}</p>
+                    <h3 className="text-xl font-black tracking-normal">{experience.title}</h3>
+                    <p className="mt-2 text-sm font-semibold text-primary dark:text-primary">{experience.role}</p>
                   </div>
-                  <Badge className="w-fit shrink-0 bg-background text-foreground">{experience.period}</Badge>
+                  <Badge className="w-fit shrink-0 border-primary/35 bg-[#fff9f1] text-primary hover:bg-primary hover:text-primary-foreground dark:border-primary/45 dark:bg-background dark:text-primary">
+                    {experience.period}
+                  </Badge>
                 </div>
 
-                <p className="mt-4 text-sm leading-6 text-muted-foreground">{experience.description}</p>
+                <p className="mt-4 text-sm leading-6 text-muted-foreground dark:text-muted-foreground">{experience.description}</p>
 
-                <ul className="mt-5 grid gap-2 text-sm leading-6 text-muted-foreground">
+                <ul className="mt-5 grid gap-2 text-sm leading-6 text-muted-foreground dark:text-muted-foreground">
                   {experience.points.map((point) => (
                     <li key={point} className="flex gap-3">
-                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary dark:bg-primary" />
                       <span>{point}</span>
                     </li>
                   ))}
@@ -59,7 +65,12 @@ export function ExperienceSection({ content }: { content: SiteContent }) {
 
                 <div className="mt-5 flex flex-wrap gap-2">
                   {experience.stack.map((item) => (
-                    <Badge key={item}>{item}</Badge>
+                    <Badge
+                      key={item}
+                      className="border-primary/35 bg-[#fff9f1] text-primary hover:bg-primary hover:text-primary-foreground dark:border-primary/45 dark:bg-background dark:text-primary"
+                    >
+                      {item}
+                    </Badge>
                   ))}
                 </div>
               </CardContent>

@@ -1,3 +1,4 @@
+import { Wrench } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
 import { SectionHeading } from '@/components/sections/SectionHeading'
@@ -10,9 +11,12 @@ export function SkillsSection({ content }: { content: SiteContent }) {
         <SectionHeading title={content.sections.skillsTitle} description={content.sections.skillsDescription} />
         <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
           {content.skillGroups.map((group) => (
-            <Card key={group.title}>
+            <Card key={group.title} data-animate="scale-in">
               <CardContent className="p-5">
-                <h3 className="font-black">{group.title}</h3>
+                <div className="flex items-center gap-2">
+                  <Wrench className="h-4 w-4 text-primary" />
+                  <h3 className="font-black">{group.title}</h3>
+                </div>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {group.items.map((item) => (
                     <Badge key={item}>{item}</Badge>

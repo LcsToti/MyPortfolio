@@ -2,7 +2,6 @@ import { ContactSection } from '@/components/sections/ContactSection'
 import { ExperienceSection } from '@/components/sections/ExperienceSection'
 import { FeaturedProjectSection } from '@/components/sections/FeaturedProjectSection'
 import { HeroSection } from '@/components/sections/HeroSection'
-import { ProofSection } from '@/components/sections/ProofSection'
 import { ProjectsSection } from '@/components/sections/ProjectsSection'
 import { SkillsSection } from '@/components/sections/SkillsSection'
 import { contentByLocale } from '@/content'
@@ -18,7 +17,6 @@ export function HomePage({ locale }: { locale: Locale }) {
   return (
     <>
       <HeroSection content={content} />
-      <ProofSection items={content.quickProofs} />
       <FeaturedProjectSection content={content} />
       <ProjectsSection content={content} />
       <ExperienceSection content={content} />
@@ -27,3 +25,4 @@ export function HomePage({ locale }: { locale: Locale }) {
     </>
   )
 }
+

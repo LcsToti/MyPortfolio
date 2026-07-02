@@ -12,7 +12,7 @@ export const ptContent: SiteContent = {
   },
   hero: {
     eyebrow: 'Olá, me chamo Lucas Toti.',
-    title: 'Desenvolvedor de Software focado em .NET, React, APIs e produtos web.',
+    title: 'Desenvolvedor de Software focado em .NET, React, APIs e sistemas web.',
     subtitle:
       'Atuo no desenvolvimento de APIs, integrações, automações, interfaces e deploy, participando de planejamento, documentação, hospedagem e manutenção de soluções web.',
     projectCta: 'Ver projetos',
@@ -37,13 +37,13 @@ export const ptContent: SiteContent = {
     title: 'Beleza Natural',
     description:
       'Sistema com cliente real para gestão e agendamento de salão, incluindo API .NET, autenticação, frontend React, automações via WhatsApp, CI/CD com GitHub Actions e deploy com Docker.',
-    cta: 'Ver case'
+    cta: 'Ver projeto'
   },
   sections: {
     projectsTitle: 'Projetos selecionados',
     projectsDescription:
       'Uma seleção de sistemas em equipe, pessoais e com cliente real, com foco em backend, integrações, entrega e manutenção.',
-    experienceTitle: 'Experiência em sistemas reais',
+    experienceTitle: 'Experiência prática em sistemas',
     experienceDescription:
       'Projetos acadêmicos, pessoais e com cliente real onde atuei em back-end, front-end, integrações, deploy e manutenção.',
     skillsTitle: 'Skills',
@@ -124,7 +124,7 @@ export const ptContent: SiteContent = {
     { title: 'Frontend', items: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'JavaScript'] },
     { title: 'Banco de dados', items: ['PostgreSQL', 'MySQL', 'MongoDB', 'SQL Server', 'SQL'] },
     { title: 'Infra/DevOps', items: ['Docker', 'GitHub Actions', 'Nginx', 'Azure', 'Oracle Cloud'] },
-    { title: 'Integrações/automação', items: ['RabbitMQ', 'Redis', 'WhatsApp/Baileys', 'MassTransit', 'Node.js'] }
+    { title: 'Integrações', items: ['RabbitMQ', 'Redis', 'WhatsApp/Baileys', 'MassTransit', 'Node.js'] }
   ],
   contactLinks: [
     { label: 'LinkedIn', href: 'https://linkedin.com/in/lcstoti' },
@@ -137,11 +137,8 @@ export const ptContent: SiteContent = {
       'Cases e projetos que mostram construção de APIs, integração entre serviços, frontend, deploy e documentação.'
   },
   detailLabels: {
-    overview: 'Resumo',
     stack: 'Stack',
     responsibilities: 'Principais pontos',
-    back: 'Voltar para projetos',
-    live: 'Online',
-    repo: 'Repositório'
+    back: 'Voltar para projetos'
   }
 }

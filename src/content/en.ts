@@ -12,7 +12,7 @@ export const enContent: SiteContent = {
   },
   hero: {
     eyebrow: 'Hi, I’m Lucas Toti.',
-    title: 'Software Developer focused on .NET, React, APIs and web products.',
+    title: 'Software Developer focused on .NET, React, APIs and web systems.',
     subtitle:
       'I work on APIs, integrations, automations, interfaces and deployment, contributing to planning, documentation, hosting and maintenance of web solutions.',
     projectCta: 'View projects',
@@ -37,13 +37,13 @@ export const enContent: SiteContent = {
     title: 'Beleza Natural',
     description:
       'Real-client salon management and scheduling system with a .NET API, authentication, React frontend, WhatsApp automations, GitHub Actions CI/CD and Docker deployment.',
-    cta: 'View case'
+    cta: 'View project'
   },
   sections: {
     projectsTitle: 'Selected projects',
     projectsDescription:
       'A selection of team, personal and real-client systems focused on backend, integrations, delivery and maintenance.',
-    experienceTitle: 'Experience with real systems',
+    experienceTitle: 'Practical experience with systems',
     experienceDescription:
       'Academic, personal and real-client projects where I worked on backend, frontend, integrations, deployment and maintenance.',
     skillsTitle: 'Skills',
@@ -136,11 +136,8 @@ export const enContent: SiteContent = {
     description: 'Cases and projects that show API development, service integration, frontend, deployment and documentation.'
   },
   detailLabels: {
-    overview: 'Overview',
     stack: 'Stack',
     responsibilities: 'Main points',
-    back: 'Back to projects',
-    live: 'Live',
-    repo: 'Repository'
+    back: 'Back to projects'
   }
 }
