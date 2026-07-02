@@ -9,7 +9,7 @@ type SharedProject = {
   links: Array<Omit<ProjectLink, 'label'>>
 }
 
-type LocalizedProject = Pick<Project, 'name' | 'type' | 'summary' | 'points' | 'highlight'> & {
+type LocalizedProject = Pick<Project, 'name' | 'type' | 'summary' | 'points' | 'highlight' | 'cardBadge' | 'pointsTitle'> & {
   logoAlt: string
   coverAlt: string
   linkLabels: Partial<Record<NonNullable<ProjectLink['kind']>, string>>
@@ -18,8 +18,8 @@ type LocalizedProject = Pick<Project, 'name' | 'type' | 'summary' | 'points' | '
 const sharedProjects: SharedProject[] = [
   {
     slug: 'beleza-natural',
-    logoSrc: '/beleza-natural-icon.png',
-    coverSrc: '/beleza-natural-thumb.png',
+    logoSrc: '/beleza-natural-icon.webp',
+    coverSrc: '/beleza-natural-thumb.webp',
     videoUrl: 'https://youtu.be/oRiqmRdPEjA',
     stack: [
       '.NET',
@@ -38,8 +38,8 @@ const sharedProjects: SharedProject[] = [
   },
   {
     slug: 'comply',
-    logoSrc: '/comply-icon.jpg',
-    coverSrc: '/comply-thumb.png',
+    logoSrc: '/comply-icon.webp',
+    coverSrc: '/comply-thumb.webp',
     videoUrl: 'https://youtu.be/D-0VdaZQiJI',
     stack: ['.NET', 'MassTransit', 'MongoDB', 'Nginx', 'React', 'TypeScript'],
     links: [
@@ -49,8 +49,8 @@ const sharedProjects: SharedProject[] = [
   },
   {
     slug: 'habitum',
-    logoSrc: '/habitum-icon.png',
-    coverSrc: '/habitum-thumb.png',
+    logoSrc: '/habitum-icon.webp',
+    coverSrc: '/habitum-thumb.webp',
     videoUrl: 'https://youtu.be/Lhrk6t1Eofo',
     stack: ['.NET', 'MySQL', 'JWT', 'Refresh Token', 'DTOs', 'Git/GitHub'],
     links: [
@@ -60,8 +60,8 @@ const sharedProjects: SharedProject[] = [
   },
   {
     slug: 'prato-do-dia',
-    logoSrc: '/prato-do-dia-icon.jpg',
-    coverSrc: '/prato-do-dia-thumb.png',
+    logoSrc: '/prato-do-dia-icon.webp',
+    coverSrc: '/prato-do-dia-thumb.webp',
     videoUrl: 'https://youtu.be/bv4MXFcel1k',
     stack: ['ASP.NET Core MVC', 'MySQL', 'Azure'],
     links: [
@@ -71,8 +71,8 @@ const sharedProjects: SharedProject[] = [
   },
   {
     slug: 'pc-certo',
-    logoSrc: '/pc-certo-icon.png',
-    coverSrc: '/pc-certo-thumb.png',
+    logoSrc: '/pc-certo-icon.webp',
+    coverSrc: '/pc-certo-thumb.webp',
     videoUrl: 'https://youtu.be/E1K-Ypvkti0',
     stack: ['HTML', 'CSS', 'JavaScript'],
     links: [
@@ -87,8 +87,10 @@ const projectTextByLocale: Record<Locale, Record<ProjectSlug, LocalizedProject>>
     'beleza-natural': {
       name: 'Beleza Natural',
       type: 'Projeto com cliente real',
+      cardBadge: 'Cliente real',
+      pointsTitle: 'Minha contribuição',
       summary:
-        'Sistema de gestão e agendamento para salão de beleza, com área pública, painel administrativo, API .NET e automações via WhatsApp.',
+        'Sistema de agendamento e gestão desenvolvido para um salão de beleza, com fluxo público de reservas, painel administrativo, autenticação, controle de agenda e automações via WhatsApp.',
       logoAlt: 'Logo do Beleza Natural',
       coverAlt: 'Tela principal do sistema Beleza Natural',
       points: [
@@ -177,8 +179,10 @@ const projectTextByLocale: Record<Locale, Record<ProjectSlug, LocalizedProject>>
     'beleza-natural': {
       name: 'Beleza Natural',
       type: 'Real-client project',
+      cardBadge: 'Real client',
+      pointsTitle: 'My contribution',
       summary:
-        'Management and scheduling system for a beauty salon, with a public area, admin dashboard, .NET API and WhatsApp automations.',
+        'Scheduling and management system developed for a beauty salon, with public booking flow, admin dashboard, authentication, calendar control and WhatsApp automations.',
       logoAlt: 'Beleza Natural logo',
       coverAlt: 'Main screen of the Beleza Natural system',
       points: [
@@ -280,6 +284,8 @@ function buildProjects(locale: Locale): Project[] {
       stack: sharedProject.stack,
       points: text.points,
       highlight: text.highlight,
+      cardBadge: text.cardBadge,
+      pointsTitle: text.pointsTitle,
       links: sharedProject.links.map((link) => ({
         ...link,
         label: text.linkLabels[link.kind ?? 'live'] ?? link.href

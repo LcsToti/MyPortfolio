@@ -10,6 +10,8 @@ import { cn } from '@/lib/utils'
 import type { Locale } from '@/types/site'
 
 const pulseDurationMs = 600
+const sectionPulseDelayMs = 500
+const sectionPulseDurationMs = 2000
 
 function getLocaleFromPath(pathname: string): Locale {
   return pathname.startsWith('/en') ? 'en' : 'pt'
@@ -18,6 +20,25 @@ function getLocaleFromPath(pathname: string): Locale {
 function scrollToHash(targetHash: string) {
   const targetId = decodeURIComponent(targetHash.replace('#', ''))
   document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' })
+}
+
+function pulseSectionHeading(targetHash: string) {
+  window.setTimeout(() => {
+    const targetId = decodeURIComponent(targetHash.replace('#', ''))
+    const heading = document.getElementById(targetId)?.querySelector<HTMLElement>('[data-section-heading]')
+
+    if (!heading) {
+      return
+    }
+
+    heading.classList.remove('section-title-pulse')
+    void heading.offsetWidth
+    heading.classList.add('section-title-pulse')
+
+    window.setTimeout(() => {
+      heading.classList.remove('section-title-pulse')
+    }, sectionPulseDurationMs)
+  }, sectionPulseDelayMs)
 }
 
 export function Header() {
@@ -48,6 +69,7 @@ export function Header() {
     targetHash: string
   ) {
     pulseLink(href)
+    pulseSectionHeading(targetHash)
 
     if (pathname === targetPath && hash === targetHash) {
       event.preventDefault()
@@ -76,7 +98,7 @@ export function Header() {
                 to={link.href}
                 className={cn(
                   'inline-block text-sm font-medium text-muted-foreground transition-colors hover:text-foreground',
-                  isActive && 'text-primary',
+                  isActive && 'nav-link-active',
                   pulsingHref === link.href && 'nav-link-pulse'
                 )}
                 onClick={(event) => handleHashLinkClick(event, link.href, content.basePath, link.hash)}
@@ -92,7 +114,7 @@ export function Header() {
             to={projectLink.href}
             className={cn(
               'inline-block text-sm font-medium text-muted-foreground transition-colors hover:text-foreground',
-              pathname.startsWith(projectsPath) && 'text-primary',
+              pathname.startsWith(projectsPath) && 'nav-link-active',
               pulsingHref === projectLink.href && 'nav-link-pulse'
             )}
             onClick={() => pulseLink(projectLink.href)}

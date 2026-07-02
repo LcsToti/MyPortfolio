@@ -33,10 +33,10 @@ export const ptContent: SiteContent = {
     'WhatsApp Bot'
   ],
   featured: {
-    label: 'Projeto destaque',
+    label: 'Case real em destaque',
     title: 'Beleza Natural',
     description:
-      'Sistema com cliente real para gestão e agendamento de salão, incluindo API .NET, autenticação, frontend React, automações via WhatsApp, CI/CD com GitHub Actions e deploy com Docker.',
+      'Sistema de agendamento e gestão desenvolvido para um salão de beleza, com fluxo público de reservas, painel administrativo, autenticação, controle de agenda e automações via WhatsApp.',
     cta: 'Ver projeto'
   },
   sections: {
@@ -54,14 +54,14 @@ export const ptContent: SiteContent = {
   },
   experience: {
     positioning:
-      'Track record técnico com entregas completas: do levantamento de requisitos à publicação, correção de bugs e manutenção evolutiva.',
+      'Participei de entregas completas, desde entender o problema e planejar a solução até publicar, corrigir bugs e evoluir o sistema.',
     cards: [
       {
         title: 'Espaço Beleza Natural',
         role: 'Desenvolvedor de Software · Projeto com cliente real',
-        period: 'jan/2026 – jun/2026',
+        period: 'jan. 2026 – jun. 2026',
         description:
-          'Sistema de gestão e agendamento para salão de beleza, desenvolvido em contexto extensionista pela PUC Minas.',
+          'Sistema de agendamento e gestão desenvolvido para um salão de beleza, com fluxo público de reservas, painel administrativo, autenticação e automações via WhatsApp.',
         points: [
           'API REST em .NET com regras de negócio para agendamentos, gestão operacional e autenticação.',
           'Front-end em React/TypeScript para fluxos públicos e administrativos.',
@@ -85,7 +85,7 @@ export const ptContent: SiteContent = {
       {
         title: 'Comply',
         role: 'Desenvolvedor de Software · Projeto acadêmico em equipe',
-        period: 'jul/2025 – dez/2025',
+        period: 'jul. 2025 – dez. 2025',
         description:
           'Projeto acadêmico de alta complexidade com integração entre múltiplos serviços, arquitetura, consistência de dados e qualidade de entrega.',
         points: [
@@ -100,7 +100,7 @@ export const ptContent: SiteContent = {
       {
         title: 'Habitum',
         role: 'Desenvolvedor Full Stack · Projeto acadêmico em equipe',
-        period: 'jan/2025 – jun/2025',
+        period: 'jan. 2025 – jun. 2025',
         description:
           'Aplicação para acompanhamento de hábitos, rotina e progressão do usuário, com foco principal no back-end.',
         points: [
@@ -115,7 +115,7 @@ export const ptContent: SiteContent = {
     ],
     education: {
       title: 'PUC Minas',
-      description: 'Análise e Desenvolvimento de Sistemas · previsão de conclusão em jun/2026.',
+      description: 'Análise e Desenvolvimento de Sistemas · concluído em jun. 2026.',
       labels: ['ADS', 'PUC Minas', 'Projetos acadêmicos', 'Documentação técnica']
     }
   },

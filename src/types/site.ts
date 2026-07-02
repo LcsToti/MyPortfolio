@@ -24,6 +24,8 @@ export type Project = {
   stack: string[]
   points: string[]
   highlight?: string
+  cardBadge?: string
+  pointsTitle?: string
   links: ProjectLink[]
 }
 
