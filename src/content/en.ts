@@ -33,35 +33,35 @@ export const enContent: SiteContent = {
     'WhatsApp Bot'
   ],
   featured: {
-    label: 'Featured project',
+    label: 'Featured client case',
     title: 'Beleza Natural',
     description:
-      'Real-client salon management and scheduling system with a .NET API, authentication, React frontend, WhatsApp automations, GitHub Actions CI/CD and Docker deployment.',
+      'Appointment scheduling and management system developed for a beauty salon, with a public booking flow, admin dashboard, authentication, schedule management, and WhatsApp automations.',
     cta: 'View project'
   },
   sections: {
     projectsTitle: 'Selected projects',
     projectsDescription:
-      'A selection of team, personal and real-client systems focused on backend, integrations, delivery and maintenance.',
+      'A selection of team, personal and client projects focused on backend, integrations, deployment and maintenance.',
     experienceTitle: 'Practical experience with systems',
     experienceDescription:
-      'Academic, personal and real-client projects where I worked on backend, frontend, integrations, deployment and maintenance.',
+      'Academic, personal and client projects where I worked on backend, frontend, integrations, deployment and maintenance.',
     skillsTitle: 'Skills',
-    skillsDescription: 'Tools I use to build APIs, interfaces, integrations and delivery environments.',
+    skillsDescription: 'Tools I use to build APIs, interfaces, integrations and deployment environments.',
     contactTitle: 'Contact',
     contactDescription:
       'Open to opportunities and technical conversations around .NET development, APIs, integrations and web systems.'
   },
   experience: {
     positioning:
-      'Technical track record with complete deliveries: from requirements discovery to publishing, bug fixing and ongoing maintenance.',
+      'I have contributed to end-to-end deliveries, from understanding the problem and planning the solution to publishing, fixing bugs and improving the system.',
     cards: [
       {
         title: 'Espaço Beleza Natural',
-        role: 'Software Developer · Real-client project',
-        period: 'Jan/2026 – Jun/2026',
+        role: 'Software Developer · Real client project',
+        period: 'Jan. 2026 – Jun. 2026',
         description:
-          'Management and scheduling system for a beauty salon, developed in an extension project context through PUC Minas.',
+          'Appointment scheduling and management system developed for a beauty salon, with a public booking flow, admin dashboard, authentication and WhatsApp automations.',
         points: [
           '.NET REST API with business rules for scheduling, operational management and authentication.',
           'React/TypeScript frontend for public and administrative flows.',
@@ -85,7 +85,7 @@ export const enContent: SiteContent = {
       {
         title: 'Comply',
         role: 'Software Developer · Academic team project',
-        period: 'Jul/2025 – Dec/2025',
+        period: 'Jul. 2025 – Dec. 2025',
         description:
           'High-complexity academic project with integration between multiple services, architecture, data consistency and delivery quality.',
         points: [
@@ -93,14 +93,14 @@ export const enContent: SiteContent = {
           'Use of DDD and Clean Architecture.',
           'Asynchronous integration with messaging and eventual consistency.',
           'Authentication, authorization and access control implementation.',
-          'Unit and integration tests; project selected as a class highlight.'
+          'Unit and integration tests; recognized as a featured project.'
         ],
         stack: ['.NET', 'MassTransit', 'MongoDB', 'Nginx', 'React', 'TypeScript', 'DDD', 'Clean Architecture']
       },
       {
         title: 'Habitum',
         role: 'Full Stack Developer · Academic team project',
-        period: 'Jan/2025 – Jun/2025',
+        period: 'Jan. 2025 – Jun. 2025',
         description:
           'Application for habit tracking, routine and user progression, with main focus on the backend.',
         points: [
@@ -108,14 +108,14 @@ export const enContent: SiteContent = {
           'API structure separating business rules from basic operations.',
           'Authentication, authorization and access control.',
           'DTOs to standardize contracts and avoid exposing sensitive data.',
-          'Workflow organization with Git/GitHub, branches, PRs and issues; project selected as a class highlight.'
+          'Workflow organization with Git/GitHub, branches, PRs and issues; recognized as a featured project.'
         ],
         stack: ['.NET', 'MySQL', 'JWT', 'Refresh Token', 'DTOs', 'Git/GitHub', 'React Native', 'Expo']
       }
     ],
     education: {
       title: 'PUC Minas',
-      description: 'Systems Analysis and Development · expected completion in Jun/2026.',
+      description: 'Systems Analysis and Development · completed in Jun. 2026.',
       labels: ['ADS', 'PUC Minas', 'Academic projects', 'Technical documentation']
     }
   },
@@ -124,7 +124,7 @@ export const enContent: SiteContent = {
     { title: 'Frontend', items: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'JavaScript'] },
     { title: 'Databases', items: ['PostgreSQL', 'MySQL', 'MongoDB', 'SQL Server', 'SQL'] },
     { title: 'Infra/DevOps', items: ['Docker', 'GitHub Actions', 'Nginx', 'Azure', 'Oracle Cloud'] },
-    { title: 'Integrations/automation', items: ['RabbitMQ', 'Redis', 'WhatsApp/Baileys', 'MassTransit', 'Node.js'] }
+    { title: 'Integrations', items: ['RabbitMQ', 'Redis', 'WhatsApp/Baileys', 'MassTransit', 'Node.js'] }
   ],
   contactLinks: [
     { label: 'LinkedIn', href: 'https://linkedin.com/in/lcstoti' },

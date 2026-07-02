@@ -10,7 +10,11 @@ export function ExperienceSection({ content }: { content: SiteContent }) {
           <p className="text-sm font-bold uppercase tracking-[0.16em] text-primary">
             {content.nav.experience}
           </p>
-          <h2 id="experience-heading" className="mt-4 text-3xl font-black tracking-normal text-foreground sm:text-4xl">
+          <h2
+            id="experience-heading"
+            data-section-heading
+            className="mt-4 text-3xl font-black tracking-normal text-foreground transition-colors sm:text-4xl"
+          >
             {content.sections.experienceTitle}
           </h2>
           <p className="mt-4 text-base leading-7 text-muted-foreground">{content.sections.experienceDescription}</p>
@@ -47,7 +51,7 @@ export function ExperienceSection({ content }: { content: SiteContent }) {
                     <h3 className="text-xl font-black tracking-normal">{experience.title}</h3>
                     <p className="mt-2 text-sm font-semibold text-primary dark:text-primary">{experience.role}</p>
                   </div>
-                  <Badge className="w-fit shrink-0 border-primary/35 bg-[#fff9f1] text-primary hover:bg-primary hover:text-primary-foreground dark:border-primary/45 dark:bg-background dark:text-primary">
+                  <Badge className="w-fit shrink-0 border-primary/35 bg-[#fff9f1] italic text-primary hover:bg-primary hover:text-primary-foreground dark:border-primary/45 dark:bg-background dark:text-primary">
                     {experience.period}
                   </Badge>
                 </div>

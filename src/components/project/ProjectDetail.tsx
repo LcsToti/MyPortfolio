@@ -142,7 +142,7 @@ export function ProjectDetail({ project, content }: { project: Project; content:
               <CardContent>
                 <div className="flex items-center gap-2">
                   <ListChecks className="h-5 w-5 text-amber-600 dark:text-amber-300" />
-                  <h2 className="text-xl font-black">{content.detailLabels.responsibilities}</h2>
+                  <h2 className="text-xl font-black">{project.pointsTitle ?? content.detailLabels.responsibilities}</h2>
                 </div>
                 <ul className="mt-5 space-y-3">
                   {project.points.map((point) => (
