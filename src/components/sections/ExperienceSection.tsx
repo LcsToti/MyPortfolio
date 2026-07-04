@@ -1,6 +1,16 @@
-import { Badge } from '@/components/ui/badge'
+﻿import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
 import type { SiteContent } from '@/types/site'
+
+const experienceIconAssets = [
+  { titlePart: 'Beleza', src: '/beleza-natural-icon.webp', alt: 'Icone do Beleza Natural' },
+  { titlePart: 'Comply', src: '/comply-icon.webp', alt: 'Icone do Comply' },
+  { titlePart: 'Habitum', src: '/habitum-icon.webp', alt: 'Icone do Habitum' }
+]
+
+function getExperienceIcon(title: string) {
+  return experienceIconAssets.find((icon) => title.includes(icon.titlePart))
+}
 
 export function ExperienceSection({ content }: { content: SiteContent }) {
   return (
@@ -39,47 +49,58 @@ export function ExperienceSection({ content }: { content: SiteContent }) {
         </div>
 
         <div className="space-y-4">
-          {content.experience.cards.map((experience) => (
-            <Card
-              key={experience.title}
-              data-animate="fade-up"
-              className="border-primary/22 bg-[#f7f0e7] text-card-foreground shadow-none transition-colors hover:border-primary/45 dark:border-primary/35 dark:bg-secondary dark:text-secondary-foreground"
-            >
-              <CardContent className="p-5 sm:p-6">
-                <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-                  <div>
-                    <h3 className="text-xl font-black tracking-normal">{experience.title}</h3>
-                    <p className="mt-2 text-sm font-semibold text-primary dark:text-primary">{experience.role}</p>
+          {content.experience.cards.map((experience) => {
+            const icon = getExperienceIcon(experience.title)
+
+            return (
+              <Card
+                key={experience.title}
+                data-animate="fade-up"
+                className="border-primary/22 bg-[#f7f0e7] text-card-foreground shadow-none transition-colors hover:border-primary/45 dark:border-primary/35 dark:bg-secondary dark:text-secondary-foreground"
+              >
+                <CardContent className="p-5 sm:p-6">
+                  <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                    <div className="flex items-start gap-3">
+                      {icon ? (
+                        <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-primary/30 bg-[#fff9f1] dark:border-primary/45 dark:bg-background">
+                          <img src={icon.src} alt={icon.alt} className="h-full w-full object-cover object-center" />
+                        </div>
+                      ) : null}
+                      <div>
+                        <h3 className="text-xl font-black tracking-normal">{experience.title}</h3>
+                        <p className="mt-2 text-sm font-semibold text-primary dark:text-primary">{experience.role}</p>
+                      </div>
+                    </div>
+                    <p className="w-fit shrink-0 text-sm italic leading-6 text-primary dark:text-muted-foreground sm:text-right">
+                      {experience.period}
+                    </p>
                   </div>
-                  <Badge className="w-fit shrink-0 border-primary/35 bg-[#fff9f1] italic text-primary hover:bg-primary hover:text-primary-foreground dark:border-primary/45 dark:bg-background dark:text-primary">
-                    {experience.period}
-                  </Badge>
-                </div>
 
-                <p className="mt-4 text-sm leading-6 text-muted-foreground dark:text-muted-foreground">{experience.description}</p>
+                  <p className="mt-4 text-sm leading-6 text-muted-foreground dark:text-muted-foreground">{experience.description}</p>
 
-                <ul className="mt-5 grid gap-2 text-sm leading-6 text-muted-foreground dark:text-muted-foreground">
-                  {experience.points.map((point) => (
-                    <li key={point} className="flex gap-3">
-                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary dark:bg-primary" />
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
+                  <ul className="mt-5 grid gap-2 text-sm leading-6 text-muted-foreground dark:text-muted-foreground">
+                    {experience.points.map((point) => (
+                      <li key={point} className="flex gap-3">
+                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary dark:bg-primary" />
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
 
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {experience.stack.map((item) => (
-                    <Badge
-                      key={item}
-                      className="border-primary/35 bg-[#fff9f1] text-primary hover:bg-primary hover:text-primary-foreground dark:border-primary/45 dark:bg-background dark:text-primary"
-                    >
-                      {item}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    {experience.stack.map((item) => (
+                      <Badge
+                        key={item}
+                        className="border-primary/35 bg-[#fff9f1] text-primary hover:bg-primary hover:text-primary-foreground dark:border-primary/45 dark:bg-background dark:text-primary"
+                      >
+                        {item}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            )
+          })}
         </div>
       </div>
     </section>

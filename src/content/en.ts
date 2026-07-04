@@ -110,7 +110,7 @@ export const enContent: SiteContent = {
           'DTOs to standardize contracts and avoid exposing sensitive data.',
           'Workflow organization with Git/GitHub, branches, PRs and issues; recognized as a featured project.'
         ],
-        stack: ['.NET', 'MySQL', 'JWT', 'Refresh Token', 'DTOs', 'Git/GitHub', 'React Native', 'Expo']
+        stack: ['.NET', 'MySQL', 'JWT', 'Refresh Token', 'Git/GitHub', 'React Native', 'Expo']
       }
     ],
     education: {
