@@ -52,7 +52,7 @@ const sharedProjects: SharedProject[] = [
     logoSrc: '/habitum-icon.webp',
     coverSrc: '/habitum-thumb.webp',
     videoUrl: 'https://youtu.be/Lhrk6t1Eofo',
-    stack: ['.NET', 'MySQL', 'JWT', 'Refresh Token', 'DTOs', 'Git/GitHub'],
+    stack: ['.NET', 'MySQL', 'JWT', 'Refresh Token', 'Git/GitHub'],
     links: [
       { href: 'https://github.com/lcstoti/habitum', kind: 'repo' },
       { href: 'https://habitum-api.lcstoti.dev', kind: 'live' }

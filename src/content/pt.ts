@@ -110,7 +110,7 @@ export const ptContent: SiteContent = {
           'Uso de DTOs para padronizar contratos e evitar exposição de dados sensíveis.',
           'Organização do fluxo com Git/GitHub, branches, PRs e issues; projeto selecionado como destaque da turma.'
         ],
-        stack: ['.NET', 'MySQL', 'JWT', 'Refresh Token', 'DTOs', 'Git/GitHub', 'React Native', 'Expo']
+        stack: ['.NET', 'MySQL', 'JWT', 'Refresh Token', 'Git/GitHub', 'React Native', 'Expo']
       }
     ],
     education: {
