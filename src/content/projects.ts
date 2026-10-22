@@ -44,7 +44,7 @@ const sharedProjects: SharedProject[] = [
     stack: ['.NET', 'MassTransit', 'MongoDB', 'Nginx', 'React', 'TypeScript'],
     links: [
       { href: 'https://github.com/lcstoti/comply', kind: 'repo' },
-      { href: 'https://comply.lcstoti.dev', kind: 'live' }
+      { href: 'https://comply.lucastoti.com', kind: 'live' }
     ]
   },
   {
@@ -55,7 +55,7 @@ const sharedProjects: SharedProject[] = [
     stack: ['.NET', 'MySQL', 'JWT', 'Refresh Token', 'Git/GitHub'],
     links: [
       { href: 'https://github.com/lcstoti/habitum', kind: 'repo' },
-      { href: 'https://habitum-api.lcstoti.dev', kind: 'live' }
+      { href: 'https://habitum-api.lucastoti.com', kind: 'live' }
     ]
   },
   {
@@ -66,7 +66,7 @@ const sharedProjects: SharedProject[] = [
     stack: ['ASP.NET Core MVC', 'MySQL', 'Azure'],
     links: [
       { href: 'https://github.com/lcstoti/pratododia', kind: 'repo' },
-      { href: 'https://pratododia.lcstoti.dev/', kind: 'live' }
+      { href: 'https://pratododia.lucastoti.com/', kind: 'live' }
     ]
   },
   {
@@ -77,7 +77,7 @@ const sharedProjects: SharedProject[] = [
     stack: ['HTML', 'CSS', 'JavaScript'],
     links: [
       { href: 'https://github.com/LcsToti/PC-Certo', kind: 'repo' },
-      { href: 'https://pc-certo.lcstoti.dev/', kind: 'live' }
+      { href: 'https://pc-certo.lucastoti.com/', kind: 'live' }
     ]
   }
 ]
