@@ -4,39 +4,39 @@
 
 @layer base {
   :root {
-    --background: 42 38% 94%;
-    --foreground: 193 39% 12%;
-    --card: 43 33% 97%;
-    --card-foreground: 193 39% 12%;
-    --primary: 24 54% 36%;
-    --primary-foreground: 42 38% 96%;
-    --secondary: 38 54% 84%;
-    --secondary-foreground: 193 39% 12%;
-    --muted: 43 24% 88%;
-    --muted-foreground: 194 14% 39%;
-    --accent: 31 55% 64%;
-    --accent-foreground: 193 39% 12%;
-    --border: 38 18% 78%;
-    --input: 38 18% 78%;
-    --ring: 24 54% 36%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 4%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 4%;
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 4%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 4%;
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 221 83% 53%;
   }
 
   .dark {
-    --background: 28 18% 8%;
-    --foreground: 42 35% 91%;
-    --card: 28 16% 12%;
-    --card-foreground: 42 35% 91%;
-    --primary: 39 70% 78%;
-    --primary-foreground: 28 18% 8%;
-    --secondary: 29 15% 18%;
-    --secondary-foreground: 42 35% 91%;
-    --muted: 28 13% 17%;
-    --muted-foreground: 38 18% 68%;
-    --accent: 32 45% 58%;
-    --accent-foreground: 28 18% 8%;
-    --border: 29 13% 24%;
-    --input: 29 13% 24%;
-    --ring: 39 70% 78%;
+    --background: 0 0% 4%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 64%;
+    --accent: 0 0% 12%;
+    --accent-foreground: 0 0% 98%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 217 91% 60%;
   }
 
   * {
@@ -75,6 +75,7 @@
   .section-title-pulse {
     animation: section-title-pulse 2s ease-out;
   }
+
 
   .subtle-grid {
     background-image:

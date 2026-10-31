@@ -50,6 +50,7 @@ export function Header() {
   const heroPath = `${content.basePath}#hero`
   const projectLink = { label: content.nav.projects, href: projectsPath }
   const sectionLinks = [
+    { label: content.nav.about, href: `${content.basePath}#about`, hash: '#about' },
     { label: content.nav.experience, href: `${content.basePath}#experience`, hash: '#experience' },
     { label: content.nav.skills, href: `${content.basePath}#skills`, hash: '#skills' },
     { label: content.nav.contact, href: `${content.basePath}#contact`, hash: '#contact' }
@@ -126,7 +127,7 @@ export function Header() {
         <div className="flex items-center gap-2">
           <Button asChild variant="ghost" size="icon" className="group">
             <a href="https://linkedin.com/in/lcstoti" aria-label="LinkedIn" {...externalLinkProps}>
-              <Linkedin className="h-4 w-4 text-[#0a66c2]" />
+              <Linkedin className="h-4 w-4 text-primary" />
             </a>
           </Button>
           <Button asChild variant="ghost" size="icon" className="group">

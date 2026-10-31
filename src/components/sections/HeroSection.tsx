@@ -31,7 +31,7 @@ export function HeroSection({ content }: { content: SiteContent }) {
             </Button>
             <Button asChild variant="ghost" className="group">
               <a href="https://linkedin.com/in/lcstoti" {...externalLinkProps}>
-                <Linkedin className="h-4 w-4 text-[#0a66c2]" />
+                <Linkedin className="h-4 w-4 text-primary" />
                 {content.hero.linkedinCta}
               </a>
             </Button>

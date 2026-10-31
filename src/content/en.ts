@@ -5,6 +5,7 @@ export const enContent: SiteContent = {
   basePath: '/en',
   alternatePath: '/pt',
   nav: {
+    about: 'About',
     projects: 'Projects',
     experience: 'Experience',
     skills: 'Skills',
@@ -40,6 +41,7 @@ export const enContent: SiteContent = {
     cta: 'View project'
   },
   sections: {
+    aboutTitle: 'About me',
     projectsTitle: 'Selected projects',
     projectsDescription:
       'A selection of team, personal and client projects focused on backend, integrations, deployment and maintenance.',
@@ -51,6 +53,20 @@ export const enContent: SiteContent = {
     contactTitle: 'Contact',
     contactDescription:
       'Open to opportunities and technical conversations around .NET development, APIs, integrations and web systems.'
+  },
+  about: {
+    intro:
+      'I have always liked understanding how things work. Since I was a kid, when something went wrong on a computer, I would search for answers and try to fix it on my own. Over time, that curiosity became my interest in programming.',
+    paragraphs: [
+      'Today my focus is backend development and systems architecture. I enjoy turning business rules into software, thinking through integrations, designing flows and solving problems that do not have an obvious answer.',
+      'I also care a lot about the experience of the person using the system. For me, a well-written backend is not enough if the user gets lost when something goes wrong.',
+      'I prefer finding a balance between technical quality and pragmatism, without making a solution more complex just because it looks better internally. What matters is making choices that fit the context and deliver real value.'
+    ],
+    highlights: [
+      { label: 'Focus', text: 'Backend, APIs, systems architecture and business rules.' },
+      { label: 'Judgment', text: 'Balance between clean structure, pragmatism and user experience.' },
+      { label: 'Education', text: 'Systems Analysis and Development degree from PUC Minas.' }
+    ]
   },
   experience: {
     positioning:

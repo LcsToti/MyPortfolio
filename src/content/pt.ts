@@ -5,6 +5,7 @@ export const ptContent: SiteContent = {
   basePath: '/pt',
   alternatePath: '/en',
   nav: {
+    about: 'Sobre',
     projects: 'Projetos',
     experience: 'Experiência',
     skills: 'Skills',
@@ -40,6 +41,7 @@ export const ptContent: SiteContent = {
     cta: 'Ver projeto'
   },
   sections: {
+    aboutTitle: 'Sobre mim',
     projectsTitle: 'Projetos selecionados',
     projectsDescription:
       'Uma seleção de sistemas em equipe, pessoais e com cliente real, com foco em backend, integrações, entrega e manutenção.',
@@ -51,6 +53,20 @@ export const ptContent: SiteContent = {
     contactTitle: 'Contato',
     contactDescription:
       'Aberto a oportunidades e conversas técnicas em desenvolvimento .NET, APIs, integrações e sistemas web.'
+  },
+  about: {
+    intro:
+      'Sempre gostei de entender como as coisas funcionam. Desde criança, quando aparecia algum problema no computador, eu pesquisava e tentava resolver por conta própria. Com o tempo, essa curiosidade virou interesse por programação.',
+    paragraphs: [
+      'Hoje meu foco é desenvolvimento backend e arquitetura de sistemas. Gosto de transformar regras de negócio em software, pensar em integrações, desenhar fluxos e resolver problemas que não têm uma resposta óbvia.',
+      'Também valorizo bastante a experiência de quem usa o sistema. Para mim, não basta o backend estar bem escrito se o usuário fica perdido quando algo dá errado.',
+      'Prefiro encontrar um equilíbrio entre qualidade técnica e pragmatismo, sem complicar uma solução só porque ela parece mais bonita por dentro. O importante é fazer escolhas que façam sentido para o contexto e entreguem valor de verdade.'
+    ],
+    highlights: [
+      { label: 'Foco', text: 'Backend, APIs, arquitetura de sistemas e regras de negócio.' },
+      { label: 'Critério', text: 'Equilíbrio entre código bem estruturado, pragmatismo e experiência de uso.' },
+      { label: 'Formação', text: 'Análise e Desenvolvimento de Sistemas pela PUC Minas.' }
+    ]
   },
   experience: {
     positioning:

@@ -20,7 +20,7 @@ function getContactIcon(link: ProjectLink) {
   const label = link.label.toLowerCase()
 
   if (label.includes('linkedin')) {
-    return <Linkedin className="h-4 w-4 text-[#0a66c2] transition-colors group-hover:text-primary-foreground dark:group-hover:text-primary-foreground" />
+    return <Linkedin className="h-4 w-4 text-primary transition-colors group-hover:text-primary-foreground dark:group-hover:text-primary-foreground" />
   }
 
   if (label.includes('github')) {
@@ -73,7 +73,13 @@ export function ContactSection({ content }: { content: SiteContent }) {
               return (
                 <Button key={link.label} type="button" variant="outline" disabled={isCopying} onClick={() => void handleCopyEmail(email)}>
                   {isCopying ? <LoaderCircle className="h-4 w-4 animate-spin" /> : <Mail className="h-4 w-4" />}
-                  {isCopying ? (content.locale === 'pt' ? 'Copiando...' : 'Copying...') : link.label}
+                  {isCopying
+                    ? content.locale === 'pt'
+                      ? 'Copiando...'
+                      : 'Copying...'
+                    : content.locale === 'pt'
+                      ? 'Copiar email'
+                      : 'Copy email'}
                 </Button>
               )
             }

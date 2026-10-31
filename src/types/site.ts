@@ -49,11 +49,17 @@ export type EducationBlock = {
   labels: string[]
 }
 
+export type AboutHighlight = {
+  label: string
+  text: string
+}
+
 export type SiteContent = {
   locale: Locale
   basePath: string
   alternatePath: string
   nav: {
+    about: string
     projects: string
     experience: string
     skills: string
@@ -76,6 +82,7 @@ export type SiteContent = {
     cta: string
   }
   sections: {
+    aboutTitle: string
     projectsTitle: string
     projectsDescription: string
     experienceTitle: string
@@ -84,6 +91,11 @@ export type SiteContent = {
     skillsDescription: string
     contactTitle: string
     contactDescription: string
+  }
+  about: {
+    intro: string
+    paragraphs: string[]
+    highlights: AboutHighlight[]
   }
   experience: {
     positioning: string

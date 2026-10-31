@@ -1,3 +1,4 @@
+import { AboutSection } from '@/components/sections/AboutSection'
 import { ContactSection } from '@/components/sections/ContactSection'
 import { ExperienceSection } from '@/components/sections/ExperienceSection'
 import { FeaturedProjectSection } from '@/components/sections/FeaturedProjectSection'
@@ -17,6 +18,7 @@ export function HomePage({ locale }: { locale: Locale }) {
   return (
     <>
       <HeroSection content={content} />
+      <AboutSection content={content} />
       <FeaturedProjectSection content={content} />
       <ProjectsSection content={content} />
       <ExperienceSection content={content} />

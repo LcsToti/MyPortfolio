@@ -1,4 +1,4 @@
-﻿import { Badge } from '@/components/ui/badge'
+import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
 import type { SiteContent } from '@/types/site'
 
@@ -56,13 +56,13 @@ export function ExperienceSection({ content }: { content: SiteContent }) {
               <Card
                 key={experience.title}
                 data-animate="fade-up"
-                className="border-primary/22 bg-[#f7f0e7] text-card-foreground shadow-none transition-colors hover:border-primary/45 dark:border-primary/35 dark:bg-secondary dark:text-secondary-foreground"
+                className="border-border bg-card text-card-foreground shadow-none transition-colors hover:border-primary/45 hover:shadow-[0_0_22px_hsl(var(--primary)/0.12)]"
               >
                 <CardContent className="p-5 sm:p-6">
                   <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                     <div className="flex items-start gap-3">
                       {icon ? (
-                        <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-primary/30 bg-[#fff9f1] dark:border-primary/45 dark:bg-background">
+                        <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-primary/25 bg-background">
                           <img src={icon.src} alt={icon.alt} className="h-full w-full object-cover object-center" />
                         </div>
                       ) : null}
@@ -91,7 +91,7 @@ export function ExperienceSection({ content }: { content: SiteContent }) {
                     {experience.stack.map((item) => (
                       <Badge
                         key={item}
-                        className="border-primary/35 bg-[#fff9f1] text-primary hover:bg-primary hover:text-primary-foreground dark:border-primary/45 dark:bg-background dark:text-primary"
+                        className="border-primary/35 bg-background text-primary hover:bg-primary hover:text-primary-foreground"
                       >
                         {item}
                       </Badge>
