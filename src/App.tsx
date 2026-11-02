@@ -19,10 +19,9 @@ export default function App() {
   const [selectedDetail, setSelectedDetail] = useState<DetailSelection | null>(null);
   const openProject = (id: string) => setSelectedDetail({ kind: "project", id });
   const openCertificate = (id: string) => setSelectedDetail({ kind: "certificate", id });
-  const { t, content, language } = usePortfolioContent();
+  const { t, content } = usePortfolioContent();
   const reducedMotion = useReducedMotion();
   const [firstName, ...familyName] = portfolio.name.split(" ");
-  const education = portfolio.education[0];
 
   return (
     <MotionConfig reducedMotion="user">
@@ -49,12 +48,6 @@ export default function App() {
                 <span aria-hidden="true">{portfolio.location}</span>
               </p>
               <p className="hero-description">{content.hero.description}</p>
-              {education?.organizationLogo && (
-                <a className="hero-education" href="#formacao">
-                  <img src={education.organizationLogo.src} width={education.organizationLogo.width} height={education.organizationLogo.height} alt="" decoding="async" />
-                  <span>{t("content.hero.education", { organization: education.organization[language] })}</span>
-                </a>
-              )}
               <div className="hero-actions flex flex-wrap items-center">
                 <a className="button-primary" href="#projetos">
                   {content.hero.primaryAction}

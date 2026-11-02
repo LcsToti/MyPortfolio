@@ -10,7 +10,6 @@ export const pt = {
         "Desenvolvo aplicações web com C#, .NET e React. Hoje, trabalho no sistema de gestão Zenit e no portal Levitta Imóveis.",
       primaryAction: "Ver projetos",
       secondaryAction: "Sobre mim",
-      education: "Formado em Análise e Desenvolvimento de Sistemas pela {{organization}}",
     },
     projectsSection: {
       title: "Projetos",

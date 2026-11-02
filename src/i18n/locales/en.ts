@@ -12,7 +12,6 @@ export const en: typeof pt = {
         "I build web applications with C#, .NET, and React. I currently work on the Zenit management system and the Levitta Imóveis property portal.",
       primaryAction: "View projects",
       secondaryAction: "About me",
-      education: "Systems Analysis and Development graduate · {{organization}}",
     },
     projectsSection: {
       title: "Projects",
