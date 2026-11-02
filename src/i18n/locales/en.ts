@@ -9,7 +9,7 @@ export const en: typeof pt = {
     hero: {
       role: "Full Stack Developer",
       description:
-        "I build web applications with C#, .NET, and React. I currently work on the Zenit management system and the Levitta Imóveis property portal.",
+        "I build web applications with C#, .NET, and React.",
       primaryAction: "View projects",
       secondaryAction: "About me",
     },

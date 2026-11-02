@@ -7,7 +7,7 @@ export const pt = {
     hero: {
       role: "Desenvolvedor Full Stack",
       description:
-        "Desenvolvo aplicações web com C#, .NET e React. Hoje, trabalho no sistema de gestão Zenit e no portal Levitta Imóveis.",
+        "Desenvolvo aplicações web com C#, .NET e React.",
       primaryAction: "Ver projetos",
       secondaryAction: "Sobre mim",
     },
