@@ -1,0 +1,39 @@
+﻿/* The effect spans the hero; the shared about portrait keeps its composition. */
+.hero {
+  position: relative;
+  isolation: isolate;
+}
+.hero-layout {
+  position: relative;
+  z-index: 1;
+}
+.portrait-hero {
+  padding-bottom: 0;
+}
+.portrait-hero .portrait-visual {
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: 0;
+  background: var(--ascii-transparent);
+}
+.portrait-hero .portrait-visual > img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  pointer-events: none;
+}
+.gradient-ascii {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.gradient-ascii canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

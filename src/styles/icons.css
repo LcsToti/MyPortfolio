@@ -1,0 +1,47 @@
+.brand-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+.concept-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  color: inherit;
+}
+.icon-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.5;
+}
+.project-detail-section .concept-icon {
+  width: 18px;
+  height: 18px;
+  flex-basis: 18px;
+}
+.project-tags > li {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  max-width: 100%;
+}
+.project-tags .brand-icon {
+  width: 18px;
+  height: 18px;
+  flex-basis: 18px;
+}
+.contact-section .brand-icon--github,
+.projects-section .brand-icon--github,
+.projects-section .brand-icon--nextjs,
+.projects-section .brand-icon--expo,
+.projects-section .brand-icon--mcp {
+  filter: invert(1);
+}
+.contact-section .concept-icon {
+  color: inherit;
+}

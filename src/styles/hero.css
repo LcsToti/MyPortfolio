@@ -1,0 +1,141 @@
+.hero {
+  overflow: hidden;
+}
+.hero-layout {
+  min-height: 565px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding-block: 48px 0;
+}
+.hero-copy {
+  flex: 1;
+  min-width: 0;
+  padding-bottom: 52px;
+}
+h1 {
+  font-size: clamp(64px, 7vw, 96px);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+  overflow-wrap: anywhere;
+}
+h1 strong {
+  font-weight: 700;
+}
+.hero-role {
+  color: var(--accent);
+  font-size: var(--text-lead);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  margin-top: 24px;
+}
+.hero-description {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: var(--text-subtitle);
+  line-height: 1.6;
+  max-width: 46ch;
+  text-wrap: pretty;
+}
+.hero-location {
+  font-family: var(--font-mono);
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: var(--text-caption);
+  line-height: 1.7;
+}
+.hero-actions {
+  gap: 13px;
+  margin-top: 32px;
+}
+.hero-education {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: var(--text-caption);
+  line-height: 1.6;
+}
+.hero-education img {
+  width: 30px;
+  height: 28px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+.hero-education:hover { color: var(--link-foreground); }
+
+@media (max-width: 1100px) {
+  .hero-layout {
+    gap: 20px;
+    min-height: 530px;
+  }
+  h1 {
+    font-size: 76px;
+  }
+  .hero-description {
+    max-width: 440px;
+  }
+}
+@media (max-width: 800px) {
+  .hero-layout {
+    gap: 20px;
+    min-height: 490px;
+    padding-top: 28px;
+  }
+  h1 {
+    font-size: 62px;
+  }
+  .hero-description {
+    font-size: var(--text-body);
+  }
+  .hero-role {
+    font-size: var(--text-body);
+    margin-top: 19px;
+  }
+}
+@media (max-width: 640px) {
+  .hero-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    min-height: 0;
+    padding-block: 46px 0;
+    gap: 30px;
+  }
+  .hero-copy {
+    flex: none;
+    width: 100%;
+    padding-bottom: 0;
+  }
+  h1 {
+    font-size: clamp(51px, 12.5vw, 72px);
+  }
+  .hero-role {
+    font-size: var(--text-lead);
+    margin-top: 18px;
+  }
+  .hero-description {
+    font-size: var(--text-lead);
+    max-width: 480px;
+  }
+  .hero-actions {
+    margin-top: 25px;
+    gap: 11px;
+  }
+}
+@media (max-width: 360px) {
+  .hero-layout {
+    padding-top: 36px;
+  }
+  h1 {
+    font-size: 49px;
+  }
+  .hero-actions {
+    gap: 10px;
+  }
+}
