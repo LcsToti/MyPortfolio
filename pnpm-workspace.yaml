@@ -1,0 +1,3 @@
+# Fix for GHSA-g3hv-75wg-m249 in the lint dependency tree.
+overrides:
+  minimatch: ^11.0.1
