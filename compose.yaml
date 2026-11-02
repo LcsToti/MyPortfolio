@@ -1,16 +1,16 @@
-name: lucas-portfolio
+name: portfolio
 
 services:
   portfolio:
     build: .
-    image: lucas-portfolio:local
+    image: portfolio:local
     restart: unless-stopped
     expose:
       - "8080"
     networks:
       proxy:
         aliases:
-          - lucas-portfolio
+          - portfolio
     read_only: true
     tmpfs:
       - /tmp:rw,noexec,nosuid,size=16m,mode=1777
