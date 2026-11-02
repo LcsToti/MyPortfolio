@@ -1,0 +1,36 @@
+name: lucas-portfolio
+
+services:
+  portfolio:
+    build: .
+    image: lucas-portfolio:local
+    restart: unless-stopped
+    expose:
+      - "8080"
+    networks:
+      proxy:
+        aliases:
+          - lucas-portfolio
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=16m,mode=1777
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--spider", "http://127.0.0.1:8080/"]
+      interval: 30s
+      timeout: 5s
+      start_period: 10s
+      retries: 3
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+networks:
+  proxy:
+    external: true
+    name: ${PROXY_NETWORK:-proxy}
